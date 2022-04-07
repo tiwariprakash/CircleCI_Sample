@@ -16,7 +16,7 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun addition_isCorrect1() {
+    fun addition_of_two_plus_one_four() {
         assertEquals(4, 1 + 2)
     }
 }
