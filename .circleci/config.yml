@@ -24,3 +24,16 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+
+
+deploy_staging:
+  steps:
+
+    - run:
+        name: Build Staging Release Apk
+        command: ./gradlew assembleStagingRelease --profile
+
+    - store_artifacts:
+        path: app/build/outputs/apk/
+        destination: /apk/
+
